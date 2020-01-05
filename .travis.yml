@@ -10,11 +10,9 @@ matrix:
     - language: node_js
       node_js:
         - "10"
-      script:
-        - npm install
+      before_script:
         - npm install -g surge
-        - npm install -g grunt-cli
-        - npm install grunt --save-dev
+      script:
         - grunt build
         - ls
         - surge --project ./build/ --domain "pr-${TRAVIS_PULL_REQUEST}-numpy-versions.surge.sh"
