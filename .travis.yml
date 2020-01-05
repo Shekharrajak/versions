@@ -1,18 +1,12 @@
+language: generic
 os:
   - linux
 
-matrix:
-  include:
-    - language: python
-      script:
-        - pip install -r dependencies/requirements.txt
+before_script:
+  - pip install -r dependencies/requirements.txt
+  - npm install -g surge
 
-    - language: node_js
-      node_js:
-        - "10"
-      before_script:
-        - npm install -g surge
-      script:
-        - grunt build
-        - ls
-        - surge --project ./build/ --domain "pr-${TRAVIS_PULL_REQUEST}-numpy-versions.surge.sh"
+script:
+  - grunt build
+  - ls
+  - surge --project ./build/ --domain "pr-${TRAVIS_PULL_REQUEST}-numpy-versions.surge.sh"
