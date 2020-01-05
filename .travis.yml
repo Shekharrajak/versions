@@ -13,6 +13,7 @@ matrix:
       script:
         - npm install
         - npm install -g surge
+        - npm install -g grunt
         - grunt build
         - ls
         - surge --project ./build/ --domain "pr-${TRAVIS_PULL_REQUEST}-numpy-versions.surge.sh"
