@@ -3,6 +3,7 @@ os:
   - linux
 
 before_script:
+  - pip install --upgrade pip
   - pip install -r dependencies/requirements.txt
   - npm install -g surge
 
