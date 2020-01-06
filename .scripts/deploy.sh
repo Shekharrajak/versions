@@ -3,6 +3,10 @@
 git submodule update --init
 
 pip install -r dependencies/requirements.txt
+
+cd scipy-sphinx-theme-v2 && python setup.py install
+cd ..
+
 npm install
 
 # deploy in surge
