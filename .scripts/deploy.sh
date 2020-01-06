@@ -2,7 +2,11 @@
 
 git submodule update --init
 
+ll
+
 pip install -r dependencies/requirements.txt
+
+ll scipy-sphinx-theme-v2
 
 cd scipy-sphinx-theme-v2 && pip install -r dependencies/requirements.txt && python setup.py install
 cd ..
