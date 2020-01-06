@@ -4,7 +4,7 @@ git submodule update --init
 
 pip install -r dependencies/requirements.txt
 
-cd scipy-sphinx-theme-v2 && python setup.py install
+cd scipy-sphinx-theme-v2 && pip install -r dependencies/requirements.txt && python setup.py install
 cd ..
 
 npm install
