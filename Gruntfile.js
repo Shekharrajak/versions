@@ -67,7 +67,7 @@ module.exports = function(grunt) {
 
       /* Changes in theme dir rebuild sphinx */
       sphinx: {
-        files: ['scipy_sphinx_theme/**/*', 'README.rst', 'versions/**/*.rst', PROJECT_DIR + '*/*.py'],
+        files: ['scipy_sphinx_theme-v2/**/*', 'README.rst', 'versions/**/*.rst', PROJECT_DIR + '*/*.py'],
         tasks: ['clean:build','exec:build_sphinx']
       },
       /* JavaScript */
