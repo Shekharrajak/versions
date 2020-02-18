@@ -51,5 +51,5 @@ This command will serve the build directory on `localhost:2121`.
 
 - Every PR will be deployed on surge automatically.
 - URL will be pr-<pr_number>-numpy-doc-versions.surge.sh
-- For example: PR #3 is deployed on https://pr-3-numpy-doc-versions.surge.sh
+- For example: PR #3 is deployed on http://numpy-versions-0.surge.sh/
 
